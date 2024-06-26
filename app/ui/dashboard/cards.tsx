@@ -22,8 +22,7 @@ export default async function CardWrapper() {
     totalPaidInvoices,
     totalPendingInvoices,
   } = await fetchCardData();
-  
-  revalidatePath('/dashboard/invoices');
+    
 
   return (
     <>
